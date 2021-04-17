@@ -1,0 +1,7 @@
+/* gallery block specific
+ ********************************************************/
+
+/* all the stuff that has to be hidden */
+.panel-block-type-pur-gallery p.sub-tab-notice { display: none; }
+
+
