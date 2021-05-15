@@ -222,7 +222,7 @@ function upfront_gallery_init() {
         'singular_name'              => _x( 'Album-Tag', 'upfront_gallery' ),
         'search_items'               => __( 'Suche nach Album-Tags', 'upfront_gallery' ),
         'popular_items'              => __( 'Beliebte Album-Tags', 'upfront_gallery' ),
-        'all_items'                  => __( 'Alle Album-Tags', 'upfront_gallery' ),
+        'all_items'                  => __( 'Alle Alben-Tags', 'upfront_gallery' ),
         'parent_item'                => __( 'Übergeordnetes Album-Tag', 'upfront_gallery' ),
         'edit_item'                  => __( 'Album-Tag bearbeiten', 'upfront_gallery' ),
         'update_item'                => __( 'Album-Tag aktualisieren', 'upfront_gallery' ),
