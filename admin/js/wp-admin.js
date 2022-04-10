@@ -145,7 +145,7 @@ jQuery.noConflict();
 
             id = $(this).closest(thumb).find('.pur-image-value').attr('value');
 
-            tb_show('Edit image', upfront_admin_url + 'media.php?attachment_id=' + id + '&action=edit&upfront_media_editor=true&upfront_action=done_editing&type=image&TB_iframe=1&height=' + thickbox_height);
+            tb_show('Bild bearbeiten', upfront_admin_url + 'media.php?attachment_id=' + id + '&action=edit&upfront_media_editor=true&upfront_action=done_editing&type=image&TB_iframe=1&height=' + thickbox_height);
 
         });
 

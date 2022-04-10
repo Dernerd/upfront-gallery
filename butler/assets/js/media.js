@@ -136,7 +136,7 @@
 						
 			id = $(this).parents('.btr-image-wrapper').find('.image-id').attr('value');
 			
-			tb_show( 'Edit image' , btrMedia.adminUrl + 'media.php?attachment_id=' + id + '&action=edit&btr_media_editor=true&btr_action=done_editing_media&type=image&TB_iframe=1&height=' + thickbox_height);
+			tb_show( 'Bild bearbeiten' , btrMedia.adminUrl + 'media.php?attachment_id=' + id + '&action=edit&btr_media_editor=true&btr_action=done_editing_media&type=image&TB_iframe=1&height=' + thickbox_height);
 		  
 		 });
 			  	

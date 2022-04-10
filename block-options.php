@@ -492,7 +492,7 @@ class UpFrontGalleryBlockOptions extends UpFrontBlockOptionsAPI {
 			'close-wrap-grid-col' => self::wrapper('grid-col'),
 			
 			'open-wrap-img-enable-crop-height' => self::wrapper('img-enable-crop-height', true),
-				'heading-img-enable-crop-height' => self::header('heading-img-enable-crop-height', 'Resize'),
+				'heading-img-enable-crop-height' => self::header('heading-img-enable-crop-height', 'Größe ändern'),
 					'img-enable-crop-height' => array(
 						'type' => 'checkbox',
 						'name' => 'img-enable-crop-height',
@@ -640,7 +640,7 @@ class UpFrontGalleryBlockOptions extends UpFrontBlockOptionsAPI {
 			'close-wrap-slider-nav' => self::wrapper('slider-nav'),
 			
 			'open-wrap-slider-height' => self::wrapper('slider-height', true),
-				'heading-slider-height' => self::header('heading-slider-height', 'Resize'),
+				'heading-slider-height' => self::header('heading-slider-height', 'Größe ändern'),
 					'slider-height' => array(
 						'type' => 'select',
 						'name' => 'slider-height',
@@ -950,7 +950,7 @@ class UpFrontGalleryBlockOptions extends UpFrontBlockOptionsAPI {
 			'close-wrap-lightbox-enable-loop' => self::wrapper('lightbox-enable-loop'),
 			
 			'open-wrap-lightbox-enable-resize' => self::wrapper('lightbox-enable-resize', true),
-				'heading-lightbox-enable-resize' => self::header('heading-lightbox-enable-resize', 'Resize'),
+				'heading-lightbox-enable-resize' => self::header('heading-lightbox-enable-resize', 'Größe ändern'),
 					'lightbox-enable-resize' => array(
 						'type' => 'checkbox',
 						'name' => 'lightbox-enable-resize',
