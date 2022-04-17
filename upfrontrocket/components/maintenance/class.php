@@ -30,7 +30,7 @@ class UpFrontRocketBlockMaintenance {
 			
 		if ( !isset( $this->option[$task][$active_skin] ) ) {
 					
-			if ( version_compare( UPFRONT_VERSION, '3.4.5', '>=' ) ) {
+			if ( version_compare( UPFRONT_VERSION, '1.0.0', '>=' ) ) {
 				
 			    /* we get all the blocks for this type */
 			    $blocks = UpFrontBlocksData::get_blocks_by_type( $this->block_type );
@@ -95,7 +95,7 @@ class UpFrontRocketBlockMaintenance {
 		/* merge default elements */
 		$task = 'merge_default_elements';
 			
-		if ( version_compare( UPFRONT_VERSION, '3.6', '>=' ) && !isset( $this->option[$task] ) ) {
+		if ( version_compare( UPFRONT_VERSION, '1.0', '>=' ) && !isset( $this->option[$task] ) ) {
 					
 			UpFrontElementsData::merge_default_design_data( $defaults_elements, $this->block_type );
 			

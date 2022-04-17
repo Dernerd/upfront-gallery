@@ -16,7 +16,7 @@ class UpFrontGalleryBlock extends UpFrontBlockAPI {
 
 		//$this->do_maintenance();
 
-		if ( version_compare(UPFRONT_VERSION, '3.6', '>=') ) {
+		if ( version_compare(UPFRONT_VERSION, '1.0.0', '>=') ) {
 
 			add_action('upfront_db_upgrade', array($this, 'merge_default_design_data'));
 			add_action('upfront_visual_editor_save', array($this, 'merge_default_design_data'));

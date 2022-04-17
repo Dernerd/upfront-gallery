@@ -11,7 +11,7 @@ function upfront_gallery_depreciate_hooks() {
 		/* header */
 		array(
 			'id' => 'header-all-view',
-			'name' => '<div class="element-header">All Views</div>',
+			'name' => '<div class="element-header">Alle Ansichten</div>',
 			'selector' => '',
 			'properties' => array('')
 		),
@@ -23,25 +23,25 @@ function upfront_gallery_depreciate_hooks() {
 		),
 		array(
 			'id' => 'block-before-',
-			'name' => 'Before Block',
+			'name' => 'Vor dem Block',
 			'selector' => $base . ' .pur-block-before',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'nudging', 'overflow', 'text-shadow')
 		),
 		array(
 			'id' => 'block-title',
-			'name' => 'Block Title',
+			'name' => 'Blocktitel',
 			'selector' => $base . ' .pur-block-title',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'nudging', 'text-shadow')
 		),
 		array(
 			'id' => 'block-title-alt',
-			'name' => 'Block Title Alt',
+			'name' => 'Blocktitel Alt',
 			'selector' => $base . ' .pur-block-title span',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'nudging', 'text-shadow')
 		),
 		array(
 			'id' => 'block-content',
-			'name' => 'Block Description',
+			'name' => 'Blockbeschreibung',
 			'selector' => $base . ' .pur-block-content',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'nudging', 'text-shadow')
 		),
@@ -53,7 +53,7 @@ function upfront_gallery_depreciate_hooks() {
 		),
 		array(
 			'id' => 'block-after',
-			'name' => 'After Block',
+			'name' => 'Nach dem Block',
 			'selector' => $base . ' .pur-block-after',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'nudging', 'overflow', 'text-shadow')
 		),
@@ -94,7 +94,7 @@ function upfront_gallery_depreciate_hooks() {
 		),
 		array(
 			'id' => 'image-title',
-			'name' => $double . 'Image Title',
+			'name' => $double . 'Bildtitel',
 			'selector' => $base . ' .image-title',
 			'properties' => array('fonts', 'background', 'borders', 'rounded-corners', 'box-shadow', 'margins', 'padding', 'text-shadow')
 		),

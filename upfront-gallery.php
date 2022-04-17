@@ -14,11 +14,7 @@ $MyUpdateChecker = Puc_v4_Factory::buildUpdateChecker(
 	__FILE__, 
 	'upfront-gallery' 
 );
-/*
 
-PUR = UPFRONT UNLIMITED ROCKET
-
-*/
 
 define('UPFRONT_GALLERY_VERSION', '1.0.4');
 define('UPFRONT_GALLERY_PATH', plugin_dir_path(__FILE__));
@@ -70,7 +66,7 @@ function upfront_gallery_register() {
 	 * Check if there is the UpFront Loader
 	 *
 	 */		
-	if ( version_compare(UPFRONT_VERSION, '1.2.0', '<=') ){			
+	if ( version_compare(UPFRONT_VERSION, '1.0.0', '<=') ){			
 		include_once $class_file;
 	}
 
@@ -190,19 +186,19 @@ function upfront_gallery_init() {
 
     /* we create our own taxonomie for the categories */
     $labels = array(
-        'name'                       => _x('Albumkategorien', 'upfront_gallery'),
-        'singular_name'              => _x('Albumkategorie', 'upfront_gallery'),
-        'search_items'               => __('Suche nach Albumkategorien', 'upfront_gallery'),
-        'popular_items'              => __('Beliebte Albumkategorien', 'upfront_gallery'),
-        'all_items'                  => __('Alle Albumkategorien', 'upfront_gallery'),
-        'parent_item'                => __('Übergeordnete Albumkategorie', 'upfront_gallery'),
-        'edit_item'                  => __('Albumkategorie bearbeiten', 'upfront_gallery'),
-        'update_item'                => __('Albumkategorie aktualisieren', 'upfront_gallery'),
-        'add_new_item'               => _x('Neue Albumkategorie hinzufügen', 'upfront_gallery'),
-        'new_item_name'              => __('Neue Albumkategorie', 'upfront_gallery'),
-        'separate_items_with_commas' => __('Separate Albumkategorien mit Kommas', 'upfront_gallery'),
-        'add_or_remove_items'        => __('Hinzufügen oder Entfernen von Albumkategorien', 'upfront_gallery'),
-        'choose_from_most_used'      => __('Wähle aus den am häufigsten verwendeten Albumkategorien', 'upfront_gallery')
+        'name'                       => _x('Albumkategorien', 'upfront-gallery'),
+        'singular_name'              => _x('Albumkategorie', 'upfront-gallery'),
+        'search_items'               => __('Suche nach Albumkategorien', 'upfront-gallery'),
+        'popular_items'              => __('Beliebte Albumkategorien', 'upfront-gallery'),
+        'all_items'                  => __('Alle Albumkategorien', 'upfront-gallery'),
+        'parent_item'                => __('Übergeordnete Albumkategorie', 'upfront-gallery'),
+        'edit_item'                  => __('Albumkategorie bearbeiten', 'upfront-gallery'),
+        'update_item'                => __('Albumkategorie aktualisieren', 'upfront-gallery'),
+        'add_new_item'               => _x('Neue Albumkategorie hinzufügen', 'upfront-gallery'),
+        'new_item_name'              => __('Neue Albumkategorie', 'upfront-gallery'),
+        'separate_items_with_commas' => __('Separate Albumkategorien mit Kommas', 'upfront-gallery'),
+        'add_or_remove_items'        => __('Hinzufügen oder Entfernen von Albumkategorien', 'upfront-gallery'),
+        'choose_from_most_used'      => __('Wähle aus den am häufigsten verwendeten Albumkategorien', 'upfront-gallery')
     );
     $args = array(
         'labels'                     => $labels,
@@ -214,23 +210,23 @@ function upfront_gallery_init() {
         'rewrite' 					 => array('slug' => 'album-categories')
     );
 
-    register_taxonomy( 'gallery_categories', 'upfront_gallery', $args );
+    register_taxonomy( 'gallery_categories', 'upfront-gallery', $args );
 
     /* we create our own taxonomie for the tags */
     $labels = array(
-        'name'                       => _x( 'Album-Tags', 'upfront_gallery' ),
-        'singular_name'              => _x( 'Album-Tag', 'upfront_gallery' ),
-        'search_items'               => __( 'Suche nach Album-Tags', 'upfront_gallery' ),
-        'popular_items'              => __( 'Beliebte Album-Tags', 'upfront_gallery' ),
-        'all_items'                  => __( 'Alle Alben-Tags', 'upfront_gallery' ),
-        'parent_item'                => __( 'Übergeordnetes Album-Tag', 'upfront_gallery' ),
-        'edit_item'                  => __( 'Album-Tag bearbeiten', 'upfront_gallery' ),
-        'update_item'                => __( 'Album-Tag aktualisieren', 'upfront_gallery' ),
-        'add_new_item'               => _x( 'Neues Album-Tag hinzufügen', 'upfront_gallery' ),
-        'new_item_name'              => __( 'Neues Album-Tag', 'upfront_gallery' ),
-        'separate_items_with_commas' => __( 'Separate Album-Tags mit Kommas', 'upfront_gallery' ),
-        'add_or_remove_items'        => __( 'Hinzufügen oder Entfernen von Album-Tags', 'upfront_gallery' ),
-        'choose_from_most_used'      => __( 'Wähle aus den am häufigsten verwendeten Album-Tags', 'upfront_gallery' )
+        'name'                       => _x( 'Album-Tags', 'upfront-gallery' ),
+        'singular_name'              => _x( 'Album-Tag', 'upfront-gallery' ),
+        'search_items'               => __( 'Suche nach Album-Tags', 'upfront-gallery' ),
+        'popular_items'              => __( 'Beliebte Album-Tags', 'upfront-gallery' ),
+        'all_items'                  => __( 'Alle Alben-Tags', 'upfront-gallery' ),
+        'parent_item'                => __( 'Übergeordnetes Album-Tag', 'upfront-gallery' ),
+        'edit_item'                  => __( 'Album-Tag bearbeiten', 'upfront-gallery' ),
+        'update_item'                => __( 'Album-Tag aktualisieren', 'upfront-gallery' ),
+        'add_new_item'               => _x( 'Neues Album-Tag hinzufügen', 'upfront-gallery' ),
+        'new_item_name'              => __( 'Neues Album-Tag', 'upfront-gallery' ),
+        'separate_items_with_commas' => __( 'Separate Album-Tags mit Kommas', 'upfront-gallery' ),
+        'add_or_remove_items'        => __( 'Hinzufügen oder Entfernen von Album-Tags', 'upfront-gallery' ),
+        'choose_from_most_used'      => __( 'Wähle aus den am häufigsten verwendeten Album-Tags', 'upfront-gallery' )
     );
     $args = array(
         'labels'                     => $labels,
@@ -242,7 +238,7 @@ function upfront_gallery_init() {
         'rewrite' 					 => array('slug' => 'album-tags')
     );
 
-    register_taxonomy( 'gallery_tags', 'upfront_gallery', $args );
+    register_taxonomy( 'gallery_tags', 'upfront-gallery', $args );
 
 }
 
@@ -528,7 +524,7 @@ class UpFrontGalleryMetaBox {
 
 					$output .= '<input type="hidden" name="' . $field['id'] . '" id="' . $field['id'] . '" value="' . $meta . '" size="30" />';
 
-					$output .= '<span class="pur-thumbnail-count"><strong>Images: </strong><span>' . $value . '</span></span>';
+					$output .= '<span class="pur-thumbnail-count"><strong>Bilder: </strong><span>' . $value . '</span></span>';
 
 				break;
 
@@ -681,9 +677,9 @@ class UpFrontGalleryMetaBox {
 	/* we add a custom field to an attachment */
 	function attachment_fields_edit($form_fields, $post) {
 
-	    $form_fields['pur-custom-link']['label'] = __( 'Benutzerdefinierten Link', 'upfront_gallery' );
+	    $form_fields['pur-custom-link']['label'] = __( 'Benutzerdefinierten Link', 'upfront-gallery' );
 	    $form_fields['pur-custom-link']['value'] = get_post_meta($post->ID, '_upfront_custom_link', true);
-	    $form_fields['pur-custom-link']['helps'] = __( 'Hinzugefügt von UpFrontRocket Gallery Block', 'upfront_gallery' );
+	    $form_fields['pur-custom-link']['helps'] = __( 'Hinzugefügt von UpFrontRocket Gallery Block', 'upfront-gallery' );
 
 	    return $form_fields;
 	}
